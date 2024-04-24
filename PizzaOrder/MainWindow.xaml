@@ -7,7 +7,31 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox HorizontalAlignment="Left" Margin="257,74,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="PizzaType" HorizontalAlignment="Left" Margin="59,33,0,0" VerticalAlignment="Top" Width="154" DropDownClosed="PizzaType_DropDownClosed">
+            <ComboBoxItem Name="Hawai">Hawai Pizza</ComboBoxItem>
+            <ComboBoxItem Name="Margarita">Margarita Pizza</ComboBoxItem>
+            <ComboBoxItem Name="Pepperoni">Pepperoni Pizza</ComboBoxItem>
+            <ComboBoxItem Name="Szalámis">Szalámis Pizza</ComboBoxItem>
+            <ComboBoxItem Name="Gyros">Gyros pizza</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="SauceType" HorizontalAlignment="Left" Margin="59,86,0,0" VerticalAlignment="Top" Width="154" RenderTransformOrigin="0.072,0.063">
+            <ComboBoxItem Name="Pesto">Pesto szósz - 300Ft</ComboBoxItem>
+            <ComboBoxItem Name="BBQ">BBQ szósz - 200Ft</ComboBoxItem>
+            <ComboBoxItem Name="Alfredo">Alfredo szósz - 250Ft</ComboBoxItem>
+            <ComboBoxItem Name="Tzatziki">Tzatziki szósz - 200Ft</ComboBoxItem>
+            <ComboBoxItem Name="Curry">Curry szósz - 400Ft</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="Size" HorizontalAlignment="Left" Margin="59,148,0,0" VerticalAlignment="Top" Width="154">
+            <ComboBoxItem Name="first">40 cm</ComboBoxItem>
+            <ComboBoxItem Name="second">32 cm</ComboBoxItem>
+            <ComboBoxItem Name="third">28 cm</ComboBoxItem>
+            <ComboBoxItem Name="fourth">21 cm</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="Number" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Margin="59,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Cart" Content="Add Cart" HorizontalAlignment="Left" Margin="59,298,0,0" VerticalAlignment="Top" Height="29" Width="60" Click="Cart_Click"/>
+        <Button x:Name="order" Content="Order" HorizontalAlignment="Left" Margin="59,352,0,0" VerticalAlignment="Top" Height="37" Width="60" Click="order_Click"/>
+        <Label Content="DB" HorizontalAlignment="Left" Margin="203,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.465,-0.032"/>
+        <Image x:Name="img" HorizontalAlignment="Left" Height="100" Margin="269,33,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
