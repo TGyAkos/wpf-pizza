@@ -54,11 +54,12 @@ namespace PizzaOrder
         public MainWindow()
         {
             InitializeComponent();
-            Souces.Add(new Souce("Pesto", 300));
-            Souces.Add(new Souce("BBQ", 200));
-            Souces.Add(new Souce("Alfredo", 250));
-            Souces.Add(new Souce("Tzatziki", 200));
-            Souces.Add(new Souce("Curry", 400));
+
+            string[] soucess = File.ReadAllLines(Directory.GetCurrentDirectory() + "/../../../szosz.txt");
+            foreach (var item in soucess)
+            {
+                Souces.Add(new Souce(item.Split(';')[0], int.Parse(item.Split(';')[1])));
+            }
         }
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {
@@ -104,11 +105,15 @@ namespace PizzaOrder
 
         private void PizzaType_DropDownClosed(object sender, EventArgs e)
         {
-            BitmapImage logo = new BitmapImage();
-            logo.BeginInit();
-            logo.UriSource = new Uri($@"D:\JaniPatrik\Képek\{PizzaType.Text.Split(' ')[0]}.png");
-            logo.EndInit();
-            img.Source = logo;
+            try
+            {
+                BitmapImage logo = new BitmapImage();
+                logo.BeginInit();
+                logo.UriSource = new Uri($@"D:\JaniPatrik\Képek\{PizzaType.Text.Split(' ')[0]}.png");
+                logo.EndInit();
+                img.Source = logo;
+            }
+            catch { }
         }
     }
 }
