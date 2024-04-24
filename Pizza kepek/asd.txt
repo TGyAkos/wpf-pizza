@@ -1,0 +1,36 @@
+Hawai pizza:
+	Sonka
+	Ananász
+	Paradicsomszósz
+Margarita pizza:
+	Friss bazsalikom
+	Kockázott paradicsom
+	Mozzarella sajt
+	Olívaolaj
+	Só
+Pepperoni pizza:
+	Pepperoni kolbász
+	Sajt
+	Jalapeno szeletek (opcionális)
+	Fűszeres paradicsomszósz
+Szalámis pizza:
+	Kolbász (pl. olasz vagy chorizo)
+	Olívabogyó
+	Kapribogyó
+	Sajt
+	Fokhagymás paradicsomszósz
+Gyros pizza:
+	Fűszeres sült csirkemell szeletek (vagy vegán hús helyettesítő)
+	Házi Tzatziki szósz (joghurt alapú vagy növényi alapú)
+	Szeletelt paradicsom
+	Hagyma szeletek (vagy lilahagyma)
+	Sajt (vagy vegán sajt)
+	Fűszeres paradicsomszósz
+
+És most öt különböző pizza szósz:
+
+Pesto szósz: 	Friss bazsalikom, fenyőmag, parmezán sajt, olívaolaj és fokhagyma keveréke.
+BBQ szósz: 	Füstös, édes-savanyú szósz, melyet hagyományosan grillételekhez használnak.
+Alfredo szósz: 	Tejszínes, sajtos szósz fokhagymával és vajjal.
+Tzatziki szósz: Görög joghurt alapú szósz uborkával, fokhagymával és friss mentával.
+Curry szósz: 	Fűszeres, indiai stílusú szósz, melyet curry porból, paradicsom alapból, kókusztejből és egyéb fűszerekből készítenek.
